@@ -3,8 +3,11 @@ public class BenchmarkHashTables {
         Zip newZip = new Zip("postnummer.csv");
         ZipV2 newZip2 = new ZipV2("postnummer.csv");
         ZipIndex newZipIndex = new ZipIndex("postnummer.csv");
-
-        
+        ZipHashTableOpenAdressing newZipHashTable = new ZipHashTableOpenAdressing("postnummer.csv");
+        newZipIndex.countKeys();
+        newZipIndex.findModulos();
+        newZipHashTable.printCollisions();
+        newZipIndex.collisions(15371);
 
         //benchmarkLookupSimple(newZip);
         //System.out.println("\n");
